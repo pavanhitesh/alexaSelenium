@@ -1,0 +1,3 @@
+com\example\stepdefinitions\StepDefinitions.class
+com\example\alexa\BaseWebDriver.class
+com\example\pageobjects\SeleniumhqPageObjects.class
