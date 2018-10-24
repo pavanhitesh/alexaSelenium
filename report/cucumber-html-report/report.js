@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 15323993900,
+  "duration": 17359063800,
   "status": "passed"
 });
 formatter.scenario({
@@ -55,26 +55,26 @@ formatter.match({
   "location": "StepDefinitions.user_navigated_to_seleiumhq_org_with_url(String)"
 });
 formatter.result({
-  "duration": 2777118700,
+  "duration": 2550961200,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.user_click_on_download_tab()"
 });
 formatter.result({
-  "duration": 1561780100,
+  "duration": 1972159300,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.user_navigated_to_documentation_tab()"
 });
 formatter.result({
-  "duration": 1074742200,
+  "duration": 1826985800,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 3823667400,
+  "duration": 1648803800,
   "status": "passed"
 });
 });
