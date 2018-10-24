@@ -7,14 +7,14 @@ pipeline{
                     script {
                     //git branch: 'master', url: 'https://github.com/pavanhitesh/alexaSelenium.git'
                     gitInfo = checkout scm
-		    sh 'ls -lrth'
+		    
                 }    
                 }
                 
             }
         stage ('Build'){
                 steps{
-                       scripts{
+                       script{
                         bat 'mvn clean install -DskipTests=true'
                         }
                 }
@@ -22,8 +22,9 @@ pipeline{
 
 	stage ('Test'){
 		steps{
-			scripts{
-			bat 'mvn test -Dcucumber.options="/src/test/java/Feature/example.feature"'
+			script{
+			//bat 'mvn test -Dcucumber.options="/src/test/java/Feature/example.feature"'
+			bat 'mvn test'
 			}
 		}
 		}
