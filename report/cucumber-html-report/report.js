@@ -13,14 +13,14 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 17359063800,
+  "duration": 1658679800,
   "status": "passed"
 });
 formatter.scenario({
   "line": 5,
-  "name": "Launch the seleniumhq browser and navigate to download page",
+  "name": "Verify Alexa Connected",
   "description": "",
-  "id": "example-for-alexa;launch-the-seleniumhq-browser-and-navigate-to-download-page",
+  "id": "example-for-alexa;verify-alexa-connected",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -32,49 +32,42 @@ formatter.scenario({
 });
 formatter.step({
   "line": 6,
-  "name": "User navigated to seleiumhq org with url \"https://www.seleniumhq.org/\"",
+  "name": "user configured the alexa device",
   "keyword": "Given "
 });
 formatter.step({
   "line": 7,
-  "name": "User click on download tab",
+  "name": "connected to Jenkins and GitHub",
   "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "User navigated to documentation tab",
+  "name": "ask Alexa to execute any command",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "https://www.seleniumhq.org/",
-      "offset": 42
-    }
-  ],
-  "location": "StepDefinitions.user_navigated_to_seleiumhq_org_with_url(String)"
+  "location": "StepDefinitions.user_configured_the_alexa_device()"
 });
 formatter.result({
-  "duration": 2550961200,
+  "duration": 159031100,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinitions.user_click_on_download_tab()"
+  "location": "StepDefinitions.connected_to_Jenkins_and_GitHub()"
 });
 formatter.result({
-  "duration": 1972159300,
+  "duration": 501000,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinitions.user_navigated_to_documentation_tab()"
+  "location": "StepDefinitions.ask_Alexa_to_execute_any_command()"
 });
 formatter.result({
-  "duration": 1826985800,
+  "duration": 445500,
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 1648803800,
+  "duration": 305200,
   "status": "passed"
 });
 });
