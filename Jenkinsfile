@@ -28,7 +28,21 @@ pipeline{
 			}
 		}
 		}
-	
+	stage ('Reports'){
+        	steps {
+        		script {
+            		cucumber fileIncludePattern: '**/*.json', sortingMethod: 'ALPHABETICAL'
+        }
     }
-    
+}	
+    }
+ 
+ post {
+    success {
+        echo "Build: ${env.BUILD_NUMBER} is Successful"
+    }
+    failure {
+        echo "Build: ${env.BUILD_NUMBER} Failed"
+        }
+    }
 }
