@@ -12,6 +12,22 @@ pipeline{
                 }
                 
             }
+        stage ('Build'){
+                steps{
+                       scripts{
+                        bat 'mvn clean install -DskipTests=true'
+                        }
+                }
+                }
+
+	stage ('Test'){
+		steps{
+			scripts{
+			bat 'mvn test -Dcucumber.options="/src/test/java/Feature/example.feature"'
+			}
+		}
+		}
+	
     }
     
 }
